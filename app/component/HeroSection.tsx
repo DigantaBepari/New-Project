@@ -31,18 +31,19 @@ export default function HeroSection() {
         </p>
 
         {/* Search */}
-        <div className="mt-[clamp(16px,3svh,32px)] flex w-full max-w-xl shrink-0 items-center rounded-full bg-white p-1.5 shadow-lg">
+        <form action="/courses" role="search" className="mt-[clamp(16px,3svh,32px)] flex w-full max-w-xl shrink-0 items-center rounded-full bg-white p-1.5 shadow-lg">
           <input
-            type="text"
+            type="search"
+            name="q"
             placeholder="Course, topic, creator"
             aria-label="Search courses, topics, or creators"
             className="min-w-0 flex-1 bg-transparent px-5 py-2 text-sm text-gray-800 outline-none"
           />
 
-          <button className="rounded-full bg-[#D4FB20] px-6 py-2.5 text-sm font-semibold text-black transition hover:scale-105">
+          <button type="submit" className="rounded-full bg-[#D4FB20] px-6 py-2.5 text-sm font-semibold text-black transition hover:scale-105">
             Search
           </button>
-        </div>
+        </form>
 
         {/* IMAGE AREA */}
         <div className="relative mt-8 min-h-0 w-full max-w-4xl flex-1">
