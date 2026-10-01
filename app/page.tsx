@@ -1,12 +1,10 @@
 import SiteFooter from "./component/siteFooter";
-import SiteHeader from "./component/SiteHeader";
-import NavBar from "./component/SiteHeader";
+import HeroSection from "./component/HeroSection";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
-      {/* <NavBar /> */}
-      <SiteHeader/>
+      <HeroSection />
       <SiteFooter />
     </main>
   );
