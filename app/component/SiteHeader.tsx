@@ -10,7 +10,7 @@ export default function SiteHeader() {
           alt="ByteSpace"
           width={120}
           height={35}
-          priority
+          style={{ height: "auto" }}
         />
       </div>
 

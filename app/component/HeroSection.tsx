@@ -142,6 +142,7 @@ export default function HeroSection() {
                   src="/images/hero-happy-students.png"
                   alt="Happy ByteSpace students"
                   fill
+                  sizes="105px"
                   className="object-contain object-left"
                 />
               </div>

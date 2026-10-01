@@ -14,6 +14,7 @@ export default function SiteFooter() {
                 alt="ByteSpace"
                 width={120}
                 height={35}
+                style={{ height: "auto" }}
               />
             </div>
 
