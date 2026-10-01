@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ByteSpace is a reference frontend recreated in `my-app` with Next.js, React, and Tailwind CSS.
+
+Run commands from `D:\Bytespace-new\my-app`. Use a second terminal for Git while the development server runs.
+
+Pages include the homepage, searchable `/courses` catalog, `/courses/1` through `/courses/90` details, `/login`, `/signup`, and custom error screens.
+
+Catalog data, reviews, and lesson outlines are samples. Authentication, social sign-in, enrollment, videos, newsletter subscriptions, and legal pages are not connected to services. Authentication forms display availability messages.
+
+Validate changes with `npm run lint` and `npm run build`. Open feature PRs against `production`; after merging, run `git switch production` and `git pull origin production`.
 
 ## Getting Started
 
@@ -18,7 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses system fonts, so builds do not require Google Fonts downloads.
 
 ## Learn More
 

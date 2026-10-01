@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function SiteHeader() {
   return (
-    <header className="relative z-20 mx-auto flex w-full max-w-6xl shrink-0 items-center justify-between gap-3 px-4 py-4 sm:px-6 sm:py-5">
-      <div className="flex items-center gap-2">
+    <header className="relative z-20 mx-auto flex w-full max-w-6xl shrink-0 flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6 sm:py-5">
+      <Link href="/" aria-label="ByteSpace home" className="flex items-center gap-2">
         <Image
           src="/images/bytespace-logo.svg"
           alt="ByteSpace"
@@ -12,9 +12,9 @@ export default function SiteHeader() {
           height={35}
           style={{ height: "auto" }}
         />
-      </div>
+      </Link>
 
-      <nav className="hidden items-center gap-8 text-sm md:flex">
+      <nav aria-label="Main navigation" className="order-last flex w-full items-center justify-center gap-8 text-sm md:order-none md:w-auto">
         <Link className="transition hover:text-[#D4FB20]" href="/">
           Home
         </Link>
