@@ -43,15 +43,16 @@ export default function CoursesSection() {
             "Data Science",
             "Cooking",
           ].map((category, index) => (
-            <button
+            <Link
               key={category}
+              href={index === 0 ? "/courses" : `/courses?category=${encodeURIComponent(category)}`}
               className={`rounded-full px-4 py-2 text-xs transition ${index === 0
                 ? "bg-[#D4FB20] font-semibold text-black"
                 : "bg-[#F5F5F5] text-gray-600 hover:bg-gray-200"
                 }`}
             >
               {category}
-            </button>
+            </Link>
           ))}
 
           <Link href="/courses" className="px-2 py-2 text-xs font-semibold text-[#003BE2]">
